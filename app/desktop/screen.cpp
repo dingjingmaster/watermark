@@ -32,7 +32,7 @@ void Screen::paintEvent(QPaintEvent *event)
     QPainter p(this);
 
     p.save();
-    p.setPen (Qt::black);
+    p.setPen (QColor::fromRgba (qRgba(102, 102, 102, 102)));
     p.setViewTransformEnabled (false);
     p.setRenderHint (QPainter::Antialiasing, true);
 

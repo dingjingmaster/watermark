@@ -23,8 +23,8 @@ private:
 
 private:
     const int                   mMargin = 3;
-    const int                   mJGH = 18;
-    const int                   mJGW = 18;
+    const int                   mJGH = 28;
+    const int                   mJGW = 28;
 
     QSize                       mSize;
     QSize                       mWidgetSize;

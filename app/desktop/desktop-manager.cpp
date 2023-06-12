@@ -32,6 +32,12 @@ DesktopManager::DesktopManager(QObject *parent)
 {
     auto screens = qApp->screens();
 
+    auto font = qApp->font();
+    font.setBold (true);
+    font.setPointSize (18);
+    font.setStyleStrategy (QFont::ForceOutline);
+    qApp->setFont (font);
+
     for (auto s : screens) {
         mScreens.append (new Screen(mString, s));
     }
